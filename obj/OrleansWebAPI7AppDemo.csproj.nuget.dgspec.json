@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/OrleansWebAPI7AppDemo/OrleansWebAPI7AppDemo.csproj": {}
+    "C:\\Users\\ktc\\Source\\Repos\\OrleansWebAPI7AppDemo\\OrleansWebAPI7AppDemo.csproj": {}
   },
   "projects": {
-    "/workspaces/OrleansWebAPI7AppDemo/OrleansWebAPI7AppDemo.csproj": {
+    "C:\\Users\\ktc\\Source\\Repos\\OrleansWebAPI7AppDemo\\OrleansWebAPI7AppDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/OrleansWebAPI7AppDemo/OrleansWebAPI7AppDemo.csproj",
+        "projectUniqueName": "C:\\Users\\ktc\\Source\\Repos\\OrleansWebAPI7AppDemo\\OrleansWebAPI7AppDemo.csproj",
         "projectName": "OrleansWebAPI7AppDemo",
-        "projectPath": "/workspaces/OrleansWebAPI7AppDemo/OrleansWebAPI7AppDemo.csproj",
-        "packagesPath": "/home/vscode/.nuget/packages/",
-        "outputPath": "/workspaces/OrleansWebAPI7AppDemo/obj/",
+        "projectPath": "C:\\Users\\ktc\\Source\\Repos\\OrleansWebAPI7AppDemo\\OrleansWebAPI7AppDemo.csproj",
+        "packagesPath": "C:\\Users\\ktc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ktc\\Source\\Repos\\OrleansWebAPI7AppDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/vscode/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ktc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +40,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Azure.AI.OpenAI": {
+              "target": "Package",
+              "version": "[1.0.0-beta.6, )"
+            },
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -74,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
