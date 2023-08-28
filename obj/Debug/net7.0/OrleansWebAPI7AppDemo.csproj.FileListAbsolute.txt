@@ -135,3 +135,4 @@ C:\Users\ktc\Source\Repos\OrleansWebAPI7AppDemo\obj\Debug\net7.0\refint\OrleansW
 C:\Users\ktc\Source\Repos\OrleansWebAPI7AppDemo\obj\Debug\net7.0\OrleansWebAPI7AppDemo.pdb
 C:\Users\ktc\Source\Repos\OrleansWebAPI7AppDemo\obj\Debug\net7.0\OrleansWebAPI7AppDemo.genruntimeconfig.cache
 C:\Users\ktc\Source\Repos\OrleansWebAPI7AppDemo\obj\Debug\net7.0\ref\OrleansWebAPI7AppDemo.dll
+C:\Users\ktc\source\repos\OrleansWebAPI7AppDemo\bin\Debug\net7.0\OpenAI_API.dll

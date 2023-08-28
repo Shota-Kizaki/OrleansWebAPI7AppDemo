@@ -4,9 +4,11 @@ using OrleansWebAPI7AppDemo.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Azure;
-using Azure.AI.OpenAI;
+using static System.Console;
+using static System.Environment;
+using OpenAI_API;
 using DotNetEnv;
+using OrleansCodeGen.Orleans;
 
 namespace OrleansWebAPI7AppDemo.Controllers
 {
@@ -14,10 +16,17 @@ namespace OrleansWebAPI7AppDemo.Controllers
     [Route("[controller]/[action]")]
     public class SimpleValueController : ControllerBase
     {
+        private string apiKey { get; set; } = String.Empty;
 
         public SimpleValueController()
         {
-            Env.Load();
+            
+            string? api = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
+            if (api != null)
+            {
+                apiKey = api;
+            }
+            // Env.Load();
         }
 
         [HttpGet()]
@@ -60,20 +69,16 @@ namespace OrleansWebAPI7AppDemo.Controllers
             return animal;
         }
         [HttpGet("{question}")]
+        [HttpGet("{question}")]
         public async Task<IActionResult> AnswerQuestion(string question)
         {
             try
             {
-                var openAiEndpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
-                var openAiKey = Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY");
+                apiKey = "sk - 2pUFyYfUx4fDoKJKe5oIT3BlbkFJNMneePz0uaH1jdttoboe";
+                OpenAIAPI api = new OpenAIAPI(apiKey);
 
-                var openAiClient = new OpenAIClient(new Uri(openAiEndpoint), new AzureKeyCredential(openAiKey));
-
-                var prompt = question;
-                var completionsResponse = await openAiClient.GetCompletionsAsync("text-davinci-003", prompt);
-                var completion = completionsResponse.Value.Choices[0].Text;
-
-                return Ok(new { Question = question, Answer = completion });
+                string result = await api.Completions.GetCompletion(question);
+                return Ok(new { Question = question, Answer = result.Trim() });
             }
             catch (Exception ex)
             {
