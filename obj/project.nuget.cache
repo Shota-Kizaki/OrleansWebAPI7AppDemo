@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hqJgISPsjmvfEOoQALojNCaOWzwKuOpqksdHJUpSTKb/sL6YgmrIV0exjIwbdzqJpUy2eXFPh7eAzjbeJBy+Sg==",
+  "dgSpecHash": "tivs+MxJDIsGCTl/DLSEskHPARC1X5pZPzjgHDuxRrItm9QyrIOt+hE1WerTpk8GWhyYdIDU4IsNnij+9nzgPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ktc\\Source\\Repos\\OrleansWebAPI7AppDemo\\OrleansWebAPI7AppDemo.csproj",
+  "projectFilePath": "C:\\Users\\ktc\\source\\repos\\OrleansWebAPI7AppDemo\\OrleansWebAPI7AppDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ktc\\.nuget\\packages\\azure.ai.openai\\1.0.0-beta.6\\azure.ai.openai.1.0.0-beta.6.nupkg.sha512",
     "C:\\Users\\ktc\\.nuget\\packages\\azure.core\\1.34.0\\azure.core.1.34.0.nupkg.sha512",
